@@ -13,10 +13,6 @@ CAdES is for [CMS Advanced Electronic Signatures](https://en.wikipedia.org/wiki/
 
 ## Get Started
 
-### Install
-
-`npm install cades-kit`
-
 ### Examples
 
 * HTML script-tag example
