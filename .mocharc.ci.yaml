@@ -1,0 +1,12 @@
+timeout: 2000
+forbid-only: true
+exit: true
+require:
+  - '@babel/register'
+  - 'test/support/globals/chai.js'
+  - 'test/support/globals/faker.js'
+  - 'test/support/globals/given.js'
+  - 'test/support/globals/sinon.js'
+  - 'test/support/globals/btoa.js'
+file:
+  - 'test/support/rootSuite.js'

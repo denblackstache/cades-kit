@@ -1,0 +1,121 @@
+@import '_variables';
+
+.main-container {
+  background-color: $main-background;
+  font-size: 14px;
+  font-family: $font;
+}
+
+.main {
+  display: flex;
+  position: absolute;
+  height: 100%;
+}
+
+.side {
+  background-color: $colorWhite;
+  box-shadow: 0px 2px 6px 0 rgba(0, 59, 84, 0.15);
+  padding: 24px 0;
+  position: fixed;
+  height: 100%;
+  width: 195px;
+}
+
+.menu-header {
+  font-size: 18px;
+  padding: 0 24px;
+  margin-top: 24px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    font-size: 14px;
+    margin-top: 12px;
+    padding: 0 24px;
+  }
+}
+
+.content {
+  margin-left: 195px;
+  display: flex;
+}
+
+.section {
+  margin-top: 24px;
+  margin-left: 24px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: $colorWhite;
+  box-shadow: 0px 2px 6px 0 rgba(0, 59, 84, 0.15);
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.section-plugin-info {
+  width: 300px;
+}
+
+.section-certificate-list {
+  width: 600px;
+}
+
+.section-sign-bes {
+  width: 600px;
+}
+
+.header {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.certificates {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #d7dfe4;
+  background-color: $colorWhite;
+}
+
+.link {
+  text-decoration: none;
+  color: #109db3;
+  border-bottom: 1px solid #109db3;
+
+  &:hover, &:focus {
+    color: #109db3;
+    border-bottom: 1px solid transparent;
+  }
+
+  &:active {
+    color: #068599;
+    border-bottom: 1px solid transparent;
+  }
+
+  &:visited {
+    color: #109db3;
+    border-bottom: 1px solid #109db3;
+  }
+}
+
+.color {
+  &--green {
+    color: #198754;
+  }
+
+  &--red {
+    color: #dc3545;
+  }
+}
+
+#selected-certificate {
+  margin-top: 24px;
+}

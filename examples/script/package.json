@@ -1,0 +1,15 @@
+{
+  "name": "cades-kit-script-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass scss/index.scss > style.css"
+  },
+  "author": "hypercoderx@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

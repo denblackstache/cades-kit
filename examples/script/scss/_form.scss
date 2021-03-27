@@ -1,0 +1,43 @@
+.textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 24px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #d7dfe4;
+  background-color: #fff;
+  font-family: monospace;
+}
+
+.button {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,64,83,0.15);
+  box-shadow: 0 2px 4px 0 rgba(0,64,83,0.15);
+  height: 40px;
+  color: #1fc0da;
+  border: 1px solid #1fc0da;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 16px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  width: 170px;
+
+  &--sign, &--hash {
+    margin-top: 24px;
+  }
+
+  &:hover {
+    color: #4cdbf2;
+    border: 1px solid #4cdbf2;
+  }
+
+  &:active {
+    color: #1db5cc;
+    border: 1px solid #1db5cc;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Examples | Cades Browser Kit</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="main-container">
+    <main class="main">
+      <aside class="side">
+        <h2 class="menu-header">Features</h2>
+        <ul class="menu">
+          <li class="menu__item"><a class="link" href="#certificate-list-box">Certificate List</a></li>
+          <li class="menu__item"><a class="link" href="#certificates-to-sign-box">Simple Signature</a></li>
+          <li class="menu__item"><a class="link" href="#hash-box">Hash</a></li>
+          <li class="menu__item">
+            <a class="link" href="#status-box">Plugin Status</a>
+          </li>
+          <li class="menu__item">
+            <a class="link" href="#versions-box">Plugin & CSP Versions</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content">
+        <div class="column1">
+        <section class="section section-certificate-list" id="certificate-list-box">
+          <h1 class="header" id="cert-list">Certificate List</h1>
+
+          <form name="crypto-form">
+            <select
+              name="list[certificate]"
+              class="certificates"
+              aria-label="Certificate List"
+              id="certificate-list"
+            ></select>
+            <div
+              id="selected-certificate"
+            ></div>
+          </form>
+        </section>
+
+        <section class="section section-certificate-list" id="certificates-to-sign-box">
+          <h1 class="header" id="simple-sign">Simple Signature</h1>
+
+          <form name="crypto-form">
+            <select
+              name="sign[certificate]"
+              class="certificates"
+              aria-label="Certificate List"
+              id="certificates-to-sign"
+            ></select>
+            <label for="payload"></label>
+            <textarea
+              class="textarea"
+              id="payload"
+            >Hello World!</textarea>
+
+            <label for="signature"></label>
+            <textarea
+              class="textarea"
+              id="signature"
+              readonly
+            ></textarea>
+
+            <button type="button" class="button button--sign" onclick="sign()" id="sign-button">Sign</button>
+          </form>
+        </section>
+
+        <section class="section section-hash" id="hash-box">
+          <h1 class="header" id="hash-header">Create Hash</h1>
+
+          <form name="crypto-form-2">
+            <label for="hash-payload"></label>
+            <textarea
+              class="textarea"
+              id="hash-payload"
+            >Hello World!</textarea>
+
+            <label for="signature"></label>
+            <textarea
+              class="textarea"
+              id="hash-value"
+              readonly
+            ></textarea>
+
+            <button type="button" class="button button--hash" onclick="hash()" id="hash-button">Hash</button>
+          </form>
+        </section>
+        </div>
+        <div class="column2">
+          <section class="section section-plugin-info" id="status-box">
+            <h1 class="header" id="plugin-status">Plugin Status</h1>
+
+            <div class="status" id="status"></div>
+            <div class="native" id="native"></div>
+          </section>
+
+          <section class="section section-plugin-info" id="versions-box">
+            <h1 class="header" id="versions">Plugin & CSP versions</h1>
+
+            <div class="product product--plugin">
+              <div class="product__name">CryptoPro Browser Plugin</div>
+              <div class="product__version" id="plugin"></div>
+            </div>
+            <div class="product product--csp">
+              <div class="product__name">CryptoPro CSP</div>
+              <div class="product__version" id="csp"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="../../vendor/cadesplugin_api.js"></script>
+    <script src="../../dist/cades-kit.js"></script>
+    <script src="js/example-certificate-list.js"></script>
+    <script src="js/example-simple-signature.js"></script>
+    <script src="js/example-create-hash.js"></script>
+    <script src="js/example-plugin-info.js"></script>
+  </body>
+</html>
