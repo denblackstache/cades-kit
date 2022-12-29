@@ -2,7 +2,7 @@
 
 Cades Browser Kit is a JS wrapper for CryptoPro Browser Plugin API. 
 
-![Tests](https://github.com/denblackstache/cades-kit/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/denblackstache/cades-kit/actions/workflows/tests.yml/badge.svg) [![npm version](https://badge.fury.io/js/cades-kit.svg)](https://badge.fury.io/js/cades-kit)
 
 The CryptoPro Browser Plugin implements CAdES standard for digital signatures.
 CAdES is for [CMS Advanced Electronic Signatures](https://en.wikipedia.org/wiki/CAdES_(computing)).
