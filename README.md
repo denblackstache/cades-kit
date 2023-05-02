@@ -9,9 +9,10 @@ CAdES is for [CMS Advanced Electronic Signatures](https://en.wikipedia.org/wiki/
 
 ## Version
 
-**CadesKit version** `0.1.0`
-
-**Plugin API version** `2.1.2`
+| CadesKit | JS SDK API | CryptoPro Browser Plugin |
+|----------|------------|--------------------------|
+| 0.1.0    | 2.1.2      | 2.x                      |
+| 1.0.0    | 2.3.6      | 2.x                      |
 
 ## Get Started
 
@@ -70,7 +71,7 @@ const hash = await new HashService().hash('text');
 
 ## Library API
 
-TODO: Add a link to the generated JSDoc
+    npm run build:docs
 
 ## License
 
