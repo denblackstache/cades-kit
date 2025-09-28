@@ -10,6 +10,6 @@
   "author": "den@densemenenko.com",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^6.0.0"
+    "node-sass": "^9.0.0"
   }
 }
